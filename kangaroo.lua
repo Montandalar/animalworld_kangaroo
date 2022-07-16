@@ -30,7 +30,6 @@ mobs:register_mob("animalworld:kangaroo", {
 	view_range = 10,
 	drops = {
 		{name = "mobs:meat_raw", chance = 1, min = 1, max = 1},
-		{name = "animalworld:kangaroocorpse", chance = 7, min = 1, max = 1},
 	},
 	water_damage = 0,
 	lava_damage = 5,
