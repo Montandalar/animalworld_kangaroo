@@ -69,10 +69,22 @@ if minetest.get_modpath("ethereal") then
 	spawn_on = {"ethereal:grass_grove", "default:desert_sand", "ethereal:dry_dirt"}
 end
 
+if minetest.get_modpath("australia") then
+    spawn_on = {
+        "default:dirt_with_grass",
+        "default:desert_sand",
+        "default:dry_dirt_with_dry_grass",
+        "default:dirt_with_dry_grass",
+        "australia:red_sand",
+        "australia:red_dirt",
+        "australia:red_gravel",
+    }
+end
+
 if not mobs.custom_spawn_animalworld then
 mobs:spawn({
 	name = "animalworld:kangaroo",
-	nodes = {"default:desert_sand", "default:dry_dirt_with_dry_grass"},
+	nodes = spawn_on,
 	min_light = 0,
 	interval = 60,
 	chance = 8000, -- 15000
