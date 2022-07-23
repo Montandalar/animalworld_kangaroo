@@ -8,6 +8,7 @@ mobs:register_mob("animalworld:kangaroo", {
 	attack_npcs = false,
 	reach = 2,
 	damage = 2,
+	fall_damage = 1,
 	hp_min = 25,
 	hp_max = 55,
 	armor = 100,
